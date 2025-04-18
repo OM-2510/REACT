@@ -1,0 +1,22 @@
+.header_text{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #f55a5a;
+    color: #ffffff;
+    font-size: 14.46px;
+    font-weight: 400;
+
+}
+
+img{
+    width: 55px;
+    height: 55px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
