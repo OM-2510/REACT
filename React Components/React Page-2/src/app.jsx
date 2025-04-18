@@ -7,7 +7,7 @@ export default function App() {
         return(
             <Entry 
                 id = {entry.index}
-                entry = {entry}
+                {...entry}
             />
 
         )
