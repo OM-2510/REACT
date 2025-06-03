@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #262626;
+    color: #D9D9D9;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+    text-align: center;
+}
+
+header > h1 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #F9F4DA;
+}
+
+header > p {
+    font-size: 0.875rem;
+    max-width: 350px;
+    color: #8E8E8E;
+}
+
+.status{
+  width: 350px;
+  text-align: center;
+  min-height: 62.4px;
+  color: #F9F4DA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.status > h3, .status > p{
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.status.won{
+    background-color: #10A95B;
+}
+
+.status.farewell{
+    background-color: #7a5ea7;
+    border: 1px dashed #323232;
+}
+
+.status.lost{
+    background-color: #ba2a2a;
+}
+
+.languages{
+    max-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.lang-box {
+  position: relative;
+  border-radius: 3px;
+  margin: 3px;
+  padding: 2px 4px;
+  font-weight: 350;
+  overflow: hidden;
+}
+
+.lang-box-lost::before {
+  content: "💀";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 0.85rem;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.word-space{
+    display: flex;
+    color:#F9F4DA;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.word-space > .individual-word{
+    background-color: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    border-bottom: 1px solid #F9F4DA;
+    width: 40px;
+    height: 40px;
+}
+
+.word-space > .individual-word-missed{
+    color:#ba2a2a;
+}
+
+.keyboard > button.correct{
+    background-color: #10A95B;
+}
+
+.keyboard > button.wrong{
+    background-color: #ec5d49;
+}
+
+.keyboard{
+    width: 400px;
+    margin: 12px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.keyboard > button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5
+}
+
+.keyboard > button{
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    margin: 2px;
+    border: 1px solid white;
+    background-color: #fcba29;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.newGame{
+    border-radius: 4px;
+    background-color: #11b5e5;
+    border: 1px solid #d7d7d7;
+    width: 228px;
+    height: 40px;
+    font-weight: 500;
+    color: black;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
