@@ -1,0 +1,14 @@
+*{
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2, button, pre{
+    color: white;
+}
+
+button{
+    background-color: rgb(48, 48, 49);
+    border: 0px ;
+    padding: 1%;
+}
